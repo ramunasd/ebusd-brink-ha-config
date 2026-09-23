@@ -1,0 +1,12 @@
+type,circuit,name,comment,QQ,ZZ,PBSB,ID,*name,range,type,divisor/values,unit,comment
+
+## Defaults
+*r,Excellent300,,,,3c
+*w,Excellent300,,,,3c
+
+r,,RelativeHumidity,RelativeHumidity,,,4022,20,,,SIR,10,%,
+r,,HumidityBoostState,HumidityBoostState,,,4022,21,,,UIR,0=Error;1=NotInitialized;2=SensorNotActive;3=PowerUpDelay;4=NormalRH;5=BoostRising;6=BoostStable;7=BoostDecending;8=BoostRHLowLevelStable,Pa,
+w,,RHSensorPresent,RHTSensorPresent,,,4080,32,,,UIR,,,[min:0;max:1;step:1;default:0]
+r,,RHSensorPresent,RHTSensorPresent,,,4050,32,,,UIR,,,,Min,,UIR,,,[min:0],Max,,UIR,,,[max:1],Step,,UIR,,,[step:1],Default,,UIR,,,[default:0]
+w,,RHSensorSensitivity,RHTSensorSensitivity,,,4080,33,,,SIR,,,[min:-2;max:2;step:1;default:0]
+r,,RHSensorSensitivity,RHTSensorSensitivity,,,4050,33,,,SIR,,,,Min,,SIR,,,[min:-2],Max,,SIR,,,[max:2],Step,,SIR,,,[step:1],Default,,SIR,,,[default:0]

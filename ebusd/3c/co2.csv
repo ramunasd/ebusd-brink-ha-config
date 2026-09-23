@@ -1,0 +1,36 @@
+type,circuit,name,comment,QQ,ZZ,PBSB,ID,*name,range,type,divisor/values,unit,comment
+
+## Defaults
+*r,Excellent300,,,,3c
+*w,Excellent300,,,,3c
+
+## CO2 sensor status(optional)
+w,,CO2SensorsActivated,CO2SensorsActivated,,,4080,3c,,,UIR,0=no;1=yes,,[min:0;max:1;step:1;default:0]
+r,,CO2SensorsActivated,CO2SensorsActivated,,,4050,3c,,,UIR,0=no;1=yes,,,,,IGN:6,,,,Default,,UIR,0=no;1=yes,,[default:0] - min/max/step fields of enum message omitted
+r,,CO2Sensor1Status,CO2Sensor1Status,,,4022,28,,,UIR,0=Error;1=NotInitialized;2=Idle;3=WarmingUp;4=Running;5=Calibrating;6=SelfTest,,
+r,,CO2Sensor1Level,CO2Sensor1Value,,,4022,29,,,UIR,,ppm,
+r,,CO2Sensor2Status,CO2Sensor2Status,,,4022,2a,,,UIR,0=Error;1=NotInitialized;2=Idle;3=WarmingUp;4=Running;5=Calibrating;6=SelfTest,,
+r,,CO2Sensor2Level,CO2Sensor2Value,,,4022,2b,,,UIR,,ppm,
+r,,CO2Sensor3Status,CO2Sensor3Status,,,4022,2c,,,UIR,0=Error;1=NotInitialized;2=Idle;3=WarmingUp;4=Running;5=Calibrating;6=SelfTest,,
+r,,CO2Sensor3Level,CO2Sensor3Value,,,4022,2d,,,UIR,,ppm,
+r,,CO2Sensor4Status,CO2Sensor4Status,,,4022,2e,,,UIR,0=Error;1=NotInitialized;2=Idle;3=WarmingUp;4=Running;5=Calibrating;6=SelfTest,,
+r,,CO2Sensor4Level,CO2Sensor4Value,,,4022,2f,,,UIR,,ppm,
+
+
+## CO2 sensor limits(optional)
+w,,CO2Sensor1LowerLimit,CO2Sensor1LowerLimit,,,4080,34,,,UIR,,ppm,[min:400;max:2000;step:25;default:400]
+r,,CO2Sensor1LowerLimit,CO2Sensor1LowerLimit,,,4050,34,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:400]
+w,,CO2Sensor1UpperLimit,CO2Sensor1UpperLimit,,,4080,35,,,UIR,,ppm,[min:400;max:2000;step:25;default:1200]
+r,,CO2Sensor1UpperLimit,CO2Sensor1UpperLimit,,,4050,35,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:1200]
+w,,CO2Sensor2LowerLimit,CO2Sensor2LowerLimit,,,4080,36,,,UIR,,ppm,[min:400;max:2000;step:25;default:400]
+r,,CO2Sensor2LowerLimit,CO2Sensor2LowerLimit,,,4050,36,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:400]
+w,,CO2Sensor2UpperLimit,CO2Sensor2UpperLimit,,,4080,37,,,UIR,,ppm,[min:400;max:2000;step:25;default:1200]
+r,,CO2Sensor2UpperLimit,CO2Sensor2UpperLimit,,,4050,37,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:1200]
+w,,CO2Sensor3LowerLimit,CO2Sensor3LowerLimit,,,4080,38,,,UIR,,ppm,[min:400;max:2000;step:25;default:400]
+r,,CO2Sensor3LowerLimit,CO2Sensor3LowerLimit,,,4050,38,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:400]
+w,,CO2Sensor3UpperLimit,CO2Sensor3UpperLimit,,,4080,39,,,UIR,,ppm,[min:400;max:2000;step:25;default:1200]
+r,,CO2Sensor3UpperLimit,CO2Sensor3UpperLimit,,,4050,39,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:1200]
+w,,CO2Sensor4LowerLimit,CO2Sensor4LowerLimit,,,4080,3a,,,UIR,,ppm,[min:400;max:2000;step:25;default:400]
+r,,CO2Sensor4LowerLimit,CO2Sensor4LowerLimit,,,4050,3a,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:400]
+w,,CO2Sensor4UpperLimit,CO2Sensor4UpperLimit,,,4080,3b,,,UIR,,ppm,[min:400;max:2000;step:25;default:1200]
+r,,CO2Sensor4UpperLimit,CO2Sensor4UpperLimit,,,4050,3b,,,UIR,,ppm,,Min,,UIR,,ppm,[min:400],Max,,UIR,,ppm,[max:2000],Step,,UIR,,ppm,[step:25],Default,,UIR,,ppm,[default:1200]

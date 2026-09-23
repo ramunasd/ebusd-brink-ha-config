@@ -1,0 +1,14 @@
+type,circuit,name,comment,QQ,ZZ,PBSB,ID,*name,range,type,divisor/values,unit,comment
+
+## Defaults
+*r,Excellent300,,,,3c
+*w,Excellent300,,,,3c
+
+w,,MinimumVoltageInput1,Input1VMin,,,4080,0d,,,SIR,10,V,[min:0;max:100;step:5;default:0]
+r,,MinimumVoltageInput1,Input1VMin,,,4050,0d,,,SIR,10,V,,Min,,SIR,10,V,[min:0],Max,,SIR,10,V,[max:100],Step,,SIR,10,V,[step:5],Default,,SIR,10,V,[default:0]
+w,,MaximumVoltageInput1,Input1VMax,,,4080,0e,,,SIR,10,V,[min:0;max:100;step:5;default:100]
+r,,MaximumVoltageInput1,Input1VMax,,,4050,0e,,,SIR,10,V,,Min,,SIR,10,V,[min:0],Max,,SIR,10,V,[max:100],Step,,SIR,10,V,[step:5],Default,,SIR,10,V,[default:100]
+w,,MinimumVoltageInput2,Input2VMin,,,4080,13,,,SIR,10,V,[min:0;max:100;step:5;default:0]
+r,,MinimumVoltageInput2,Input2VMin,,,4050,13,,,SIR,10,V,,Min,,SIR,10,V,[min:0],Max,,SIR,10,V,[max:100],Step,,SIR,10,V,[step:5],Default,,SIR,10,V,[default:0]
+w,,MaximumVoltageInput2,Input2VMax,,,4080,14,,,SIR,10,V,[min:0;max:100;step:5;default:100]
+r,,MaximumVoltageInput2,Input2VMax,,,4050,14,,,SIR,10,V,,Min,,SIR,10,V,[min:0],Max,,SIR,10,V,[max:100],Step,,SIR,10,V,[step:5],Default,,SIR,10,V,[default:100]

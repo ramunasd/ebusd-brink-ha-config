@@ -1,0 +1,14 @@
+type,circuit,name,comment,QQ,ZZ,PBSB,ID,*name,range,type,divisor/values,unit,comment
+
+## Defaults
+*r,Excellent300,,,,3c
+*w,Excellent300,,,,3c
+
+## Geothermal heat exchanger(optional)
+r,,EWTStatus,EWTStatus,,,4022,1f,,,UIR,0=OpenLow;1=Closed;2=OpenHigh,,
+w,,GeoHeatExchanger,EWTMode,,,4080,18,,,UIR,0=off;1=on,,[min:0;max:1;step:1;default:0]
+r,,GeoHeatExchanger,EWTMode,,,4050,18,,,UIR,0=off;1=on,,,,,IGN:6,,,,Default,,UIR,0=off;1=on,,[default:0] - min/max/step fields of enum message omitted
+w,,MinTempGeoHeatExchanger,EWTTempMin,,,4080,19,,,SIR,10,°C,[min:0;max:100;step:5;default:50]
+r,,MinTempGeoHeatExchanger,EWTTempMin,,,4050,19,,,SIR,10,°C,,Min,,SIR,10,°C,[min:0],Max,,SIR,10,°C,[max:100],Step,,SIR,10,°C,[step:5],Default,,SIR,10,°C,[default:50]
+w,,MaxTempGeoHeatExchanger,EWTTempMax,,,4080,1a,,,SIR,10,°C,[min:150;max:400;step:5;default:250]
+r,,MaxTempGeoHeatExchanger,EWTTempMax,,,4050,1a,,,SIR,10,°C,,Min,,SIR,10,°C,[min:150],Max,,SIR,10,°C,[max:400],Step,,SIR,10,°C,[step:5],Default,,SIR,10,°C,[default:250]
